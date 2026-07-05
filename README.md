@@ -1,34 +1,47 @@
-# NexaAI — AI Consulting Agency
+﻿# NexaAI
 
-A beautiful, read-only agency website built autonomously by a Claude cloud agent via **Loop Engineering**.
+> AI consulting agency website — built autonomously via Loop Engineering.
 
-Each page is a separate Jira story → separate PR → merged by a human. No babysitting required.
+## About
 
-## Pages (9 stories, 9 PRs)
-
-| Story | Page | Route |
-|-------|------|-------|
-| SCRUM-5 | Home | `/` |
-| SCRUM-6 | About Us | `/about` |
-| SCRUM-7 | Services | `/services` |
-| SCRUM-25 | Our Process | `/process` |
-| SCRUM-26 | Case Studies | `/case-studies` |
-| SCRUM-27 | Team | `/team` |
-| SCRUM-28 | Blog & Insights | `/blog` |
-| SCRUM-29 | Careers | `/careers` |
-| SCRUM-30 | Contact | `/contact` |
+NexaAI is a modern, read-only agency website showcasing AI consulting services. The site is built with a dark-mode glassmorphism design across 9 pages.
 
 ## Tech Stack
 
-- **Next.js 15** (App Router)
-- **TypeScript**
-- **Tailwind CSS**
-- Dark-mode glassmorphism design
+| Layer | Technology |
+|-------|------------|
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Design | Dark-mode glassmorphism |
 
-## Loop Engineering Pipeline
+## Pages
+
+| Route | Page |
+|-------|------|
+| `/` | Home |
+| `/about` | About Us |
+| `/services` | Services |
+| `/process` | Our Process |
+| `/case-studies` | Case Studies |
+| `/team` | Team |
+| `/blog` | Blog & Insights |
+| `/careers` | Careers |
+| `/contact` | Contact |
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+## What is Loop Engineering?
+
+Loop Engineering is an autonomous development pipeline where a scheduled Claude cloud agent reads Jira stories, implements them as code, and opens one GitHub PR per story — no babysitting required.
 
 ```
-Jira To Do → Claude builds → PR opened → Human merges → repeat daily
+Jira To Do -> Claude implements -> PR opened -> Human merges -> repeat
 ```
-
-The agent never pushes to main. Every story gets its own branch and PR.
